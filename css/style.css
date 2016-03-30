@@ -1,0 +1,49 @@
+body {
+    font-family: 'Lora', serif;
+}
+
+header, footer[role="contentinfo"]{
+    text-align: center;
+    background: url('../images/pattern.jpg') repeat;
+}
+
+footer[role="contentinfo"]{
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/*Main title*/
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.25em;
+}
+
+/*Subtitle and Tagline*/
+header p{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/*Subtitle*/
+header p:nth-child(2){
+    font-size: 1.5em;
+}
+
+/*Tagline*/
+header p:nth-of-type(2){
+    font-size: 2em;
+}
+
+/*iPads (portrait and landscape) -----------*/ 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    .thumbnail{
+        max-width: 75%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px){
+    .thumbnail{
+        max-width: 50%;
+    }
+}
