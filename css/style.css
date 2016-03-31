@@ -1,3 +1,9 @@
+/* Audrey Hepburn Tribute color palette
+black
+white
+#7C7C7C (gray)
+*/
+
 body {
     font-family: 'Lora', serif;
 }
@@ -34,16 +40,26 @@ header p:nth-of-type(2){
     font-size: 2em;
 }
 
-/*iPads (portrait and landscape) -----------*/ 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
-    .thumbnail{
-        max-width: 75%;
-    }
+a:link{
+    color: black;
+    border-bottom: 1px dotted #7C7C7C;
 }
 
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px){
-    .thumbnail{
-        max-width: 50%;
-    }
+a:visited{
+    color: #7C7C7C;
+    text-decoration:none;
 }
+
+a:hover{
+    text-decoration:none;
+    font-weight: bold;
+}
+
+a:focus{
+    text-decoration:none;
+}
+
+/*Optimize line lengths for readability*/
+main .container{
+        max-width: 540px
+    }
